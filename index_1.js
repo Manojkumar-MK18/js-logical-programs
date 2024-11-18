@@ -12,5 +12,20 @@ function FindlargestNumber(sentence) {
   return largestWord;
 }
 
+//Program to find small word in a given sentence
+function FindSmallNumber(sentence) {
+  const words = sentence.split(" ");
+  let smallWord = words[0];
+
+  for (const word of words) {
+    if (word.length < smallWord.length) {
+      smallWord = word;
+    }
+  }
+
+  return smallWord;
+}
+
 const sentence = "Program to find longest word in a given sentence";
-console.log(FindlargestNumber(sentence));
+console.log(FindlargestNumber(sentence), "===>large word");
+console.log(FindSmallNumber(sentence), "===>small word");
