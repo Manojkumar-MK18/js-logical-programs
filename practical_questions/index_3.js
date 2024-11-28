@@ -38,7 +38,7 @@ const array = [
   { id: 2, name: "Bob" },
 ];
 
-console.log(removeDuplicatesBySet(arr), "===> Set Methode")
-console.log(removeDuplicatesByFilter(arr), "===> Filter Methode")
+console.log(removeDuplicatesBySet(arr), "===> Set Methode");
+console.log(removeDuplicatesByFilter(arr), "===> Filter Methode");
 console.log(removeDuplicatesByReduce(arr), "===> Reduce Methode");
 console.log(removeDuplicatesBySetInObj(array, "id"), "===> set Methode in Obj");
